@@ -35,6 +35,8 @@
 
     .right{
         order: 0;
+        height: 22rem;
+        width: 30rem;
     }
     .image, .overlay {
         border-bottom-right-radius: 0;
