@@ -10,26 +10,51 @@
       sizes="32x32"
       href="src/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <link rel="stylesheet" href="src/css/variables.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    <main>
-      <h1 class="title">
-        Get <span class="title-span">insights</span> that help your business
-        grow.
-      </h1>
+    <main class="container">
+      <div class="left">
+        <h1 class="title">
+          Get <span class="title-span">insights</span> that help your business
+          grow.
+        </h1>
 
-      <p class="paragrafh">
-        Discover the benefits of data analytics and make better decisions
-        regarding revenue, customer experience, and overall efficiency.
-      </p>
+        <p class="paragrafh">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
 
-      <ul>
-        <li class="insight">10k+ companies</li>
-        <li class="insight">314 templates</li>
-        <li class="insight">12m+ queries</li>
-      </ul>
-      <img src="images/image-header-desktop.jpg" alt="" srcset="" />
+        <ul class="insights">
+          <li class="insight"><span class="span">10k+</span> companies</li>
+          <li class="insight"><span class="span">314</span> templates</li>
+          <li class="insight"><span class="span">12M+</span> queries</li>
+        </ul>
+      </div>
+      <div class="right">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="src/images/image-header-mobile.jpg"
+          />
+          <source
+            media="(min-width: 769px)"
+            srcset="src/images/image-header-desktop.jpg"
+          />
+          <img src="src/images/image-header-desktop.jpg" alt="image-header" class="image" />
+          <div class="overlay"></div>
+        </picture>
+      </div>
     </main>
     <footer class="attribution">
       Challenge by
